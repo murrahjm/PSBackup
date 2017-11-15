@@ -9,6 +9,8 @@ Idea to create a method for backing up powershell environment to a remote websit
 
 Current idea is that the backup could just be a large block of JSON.  For the private modules maybe make a catalog or zip file, backup as base64 string or something.  Not sure exactly
 There would be two parts to this project, the "server" side and the "client" side
+
+Cross-platform support would be cool.  Save on windows, restore on linux and vice-versa.
 ## Server
 
 Create a webserver and API with POSH Universal Dashboards with OAuth login support.  Web interface would be a dashboard showing backup stats (number of backups, log of which machines were backed up) and maybe the most recent backup in JSON format.
