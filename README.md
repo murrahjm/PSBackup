@@ -1,6 +1,7 @@
 # PSBackup
 
 Idea to create a method for backing up powershell environment to a remote website, for restoration later to a new environment.  Thought is that it could be used on a new machine or borrowed machine to get the shell back to the way you're used to it.  Things that could be backed up:
+
 * all profile.ps1 scripts
 * any dot-sourced scripts from the profiles
 * references to any modules installed from the PSGallery
@@ -11,6 +12,7 @@ Current idea is that the backup could just be a large block of JSON.  For the pr
 There would be two parts to this project, the "server" side and the "client" side
 
 Cross-platform support would be cool.  Save on windows, restore on linux and vice-versa.
+
 ## Server
 
 Create a webserver and API with POSH Universal Dashboards with OAuth login support.  Web interface would be a dashboard showing backup stats (number of backups, log of which machines were backed up) and maybe the most recent backup in JSON format.
